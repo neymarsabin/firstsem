@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<!-- 2016-12-14 Wed 21:12 -->
+<meta  charset="utf-8" />
+<meta  htto-equiv="X-UA-Compatible" content="chrome=1" />
+<meta  name="generator" content="Org-mode with org-ioslide" />
+
+<meta  name="description" content="First semester html and css lecture 2"
+ />
+
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--This one seems to work all the time, but really small on ipad-->
+<!--<meta name="viewport" content="initial-scale=0.4">-->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" media="all" href="theme/css/default.css" />
+<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css" />
+<link rel="stylesheet" media="all" href="theme/css/small-icon.css" />
+<base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+<script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+
+   <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+
+<script src="js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML,local/local" type="text/javascript"></script>
+</head>
+<body style="opacity: 0">
+<slides class="layout-widescreen">
+<slide class="title-slide segue nobackground">
+       <aside class="gdbar"><img src="images/emacs-icon.png"></aside>
+       <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+       <hgroup class="auto-fadein">
+         <h1 data-config-title><!-- populated from slide_config.json --></h1>
+         <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+         <p data-config-presenter><!-- populated from slide_config.json --></p>
+       </hgroup>
+    </slide>
+  
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"></h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/joke-of-the-day.jpg" alt="joke-of-the-day.jpg" width="600px" height="500px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2">What we did?</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>Intro on HTML</li>
+<li>Why HTML?</li>
+<li>How Web Browser works?</li>
+<li>What are tags and tag elements ?</li>
+<li>Some Tags</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3">What we did?</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>&lt;p&gt; = paragraph</li>
+<li>&lt;br&gt; = the breaker tag</li>
+<li>&lt;pre&gt; = predefined formatting</li>
+<li>&lt;h1&gt;..&lt;/h6&gt; =  Header Tags</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4">Today</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>Formatting</li>
+<li>HTML Attributes</li>
+<li>Images and Links</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline5" class="outline-2">
+<h2 id="orgheadline5">Formatting</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>&lt;b&gt; - Bold text</li>
+<li>&lt;strong&gt; - Important text</li>
+<li>&lt;i&gt; - Italic text</li>
+<li>&lt;em&gt; - Emphasized text</li>
+<li>&lt;mark&gt; - Marked text</li>
+<li>&lt;small&gt; - Small text</li>
+<li>&lt;del&gt; - Deleted text</li>
+<li>&lt;ins&gt; - Inserted text</li>
+<li>&lt;sub&gt; - Subscript text</li>
+<li>&lt;sup&gt; - Superscript text</li>
+<li>&lt;u&gt; - underline text</li>
+<li>&lt;quote&gt; &lt;/quote&gt; = for quotations</li>
+<li>&lt;blockquote&gt; &lt;/blockquote&gt;</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline6" class="outline-2">
+<h2 id="orgheadline6">Comments</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>&lt;!&#x2013; Comments that is not displayed in browser  &#x2013;&gt;</li>
+<li>Great help for debugging HTML code</li>
+<li><p>
+Conditional comments ( we will discuss more on this later )
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="html">
+&lt;!-- This is a comment that is not displayed by the browser --&gt;
+</pre>
+
+</div></li>
+</ul>
+
+
+</article>
+
+</slide>
+
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline7" class="outline-2">
+<h2 id="orgheadline7">HTML Attributes</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>All elements can have attributes</li>
+<li>Provides additional information</li>
+<li>Always specified in the start tag</li>
+<li>name/value pairs  ( attribue-name = value )</li>
+</ul>
+
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="html">
+&lt;!doctype html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8"/&gt;
+    &lt;title&gt;Hello world&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt; &lt;/body&gt;
+    &lt;/html&gt;
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline8" class="outline-2">
+<h2 id="orgheadline8">Some most used Attributes</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li><b>alt</b> = Specifies an alternative text for an image, when the image cannot be displayed</li>
+<li><b>disabled</b> = Specifies that an input element should be disabled</li>
+<li><b>href</b> = Specifies the URL (web address) for a link</li>
+<li><b>id</b> = Specifies a unique id for an element</li>
+<li><b>src</b> = Specifies the URL (web address) for an image</li>
+<li><b>style</b> = Specifies an inline CSS style for an element</li>
+<li><b>title</b> = Specifies extra information about an element (displayed as a tool tip)</li>
+<li><b>class</b> = specify special classes to the html tags</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline9" class="outline-2">
+<h2 id="orgheadline9">Images</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>&lt;img&gt; tag is used</li>
+<li><b>alt</b> attribute is for alternative text for an image</li>
+<li><b>src</b> specifies the source of the image</li>
+</ul>
+
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="html">
+&lt;img alt="image_description" src="path_to_the_image"/&gt;
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline10" class="outline-2">
+<h2 id="orgheadline10">Links</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>what are <b>hyperlinks</b>?
+<ul>
+<li>Programmatic commands to 'jump-to-another-page' in the web browser</li>
+<li>Hyperlink tells the web browser to load the target web page</li>
+</ul></li>
+</ul>
+
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="html">
+&lt;a href="Some url"&gt;Some text which has the link&lt;/a&gt;
+</pre>
+
+</div>
+
+<ul>
+<li>Some attributes &lt;a&gt;&lt;/a&gt; supports 
+<ul>
+<li><b>href</b> = specifies the destination url</li>
+<li><b>target</b> = where to open the linked document 
+<ul>
+<li>_blank - opens the link in new tab</li>
+<li>_self - opens the link in same tab</li>
+</ul></li>
+</ul></li>
+</ul>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline11" class="outline-2">
+<h2 id="orgheadline11">Tables</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="html">
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;FirstName&lt;/th&gt;
+    &lt;th&gt;LastName&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Neymar&lt;/td&gt;
+    &lt;td&gt;Jr&lt;/td&gt;
+    &lt;td&gt;24&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Lionel&lt;/td&gt;
+    &lt;td&gt;Messi&lt;/td&gt;
+    &lt;td&gt;28&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline12" class="outline-2">
+<h2 id="orgheadline12"></h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">th</td>
+<td class="left">th</td>
+<td class="left">th</td>
+</tr>
+
+<tr>
+<td class="left">td</td>
+<td class="left">td</td>
+<td class="left">td</td>
+</tr>
+
+<tr>
+<td class="left">td</td>
+<td class="left">td</td>
+<td class="left">td</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>And the table is</b> 
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">FirstName</td>
+<td class="left">LastName</td>
+<td class="right">Age</td>
+</tr>
+
+<tr>
+<td class="left">Neymar</td>
+<td class="left">Junior</td>
+<td class="right">24</td>
+</tr>
+
+<tr>
+<td class="left">Lionel</td>
+<td class="left">Messi</td>
+<td class="right">28</td>
+</tr>
+</tbody>
+</table>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline13" class="outline-2">
+<h2 id="orgheadline13">HTML Forms</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>html <b>input</b> element is important</li>
+<li><p>
+the <b>type</b> attribute of <b>input</b> 
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">&lt;input type="text"&gt;</td>
+<td class="left">one-line text input field</td>
+</tr>
+
+<tr>
+<td class="left">&lt;input type="radio"&gt;</td>
+<td class="left">a radio button</td>
+</tr>
+
+<tr>
+<td class="left">&lt;input type="submit"&gt;</td>
+<td class="left">a submit button</td>
+</tr>
+
+<tr>
+<td class="left">&lt;input type="password"&gt;</td>
+<td class="left">a password entry field</td>
+</tr>
+
+<tr>
+<td class="left">&lt;input type="checkbox"&gt;</td>
+<td class="left">a checkbox of entries</td>
+</tr>
+
+<tr>
+<td class="left">&lt;input type="reset"&gt;</td>
+<td class="left">a reset button</td>
+</tr>
+
+<tr>
+<td class="left">&lt;input type="button"&gt;</td>
+<td class="left">a button field</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline14" class="outline-2">
+<h2 id="orgheadline14">some other values that type can take</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>number</li>
+<li>date</li>
+<li>email</li>
+<li>range</li>
+<li>search</li>
+<li>time</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline15" class="outline-2">
+<h2 id="orgheadline15">Some other input attributes</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>value</li>
+<li>disabled</li>
+<li>maxlength</li>
+<li>autocomplete</li>
+<li>minlength</li>
+<li>autofocus</li>
+<li>placeholder
+and more&#x2026;</li>
+</ul>
+
+
+</article>
+
+</slide>
+<slide class="backdrop"></slide>
+</slides> 
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body> 
+
+</html>

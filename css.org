@@ -1,0 +1,121 @@
+#+TITLE: Cascading StyleSheets
+#+OPTIONS: num:nil toc:nil H:1 html_postamble:nil reveal_single_file:t 
+#+OPTIONS: reveal_center:t reveal_control:t reveal_height:-1
+#+OPTIONS: reveal_history:nil reveal_keyboard:t reveal_overview:t
+#+OPTIONS: reveal_progress:t reveal_rolling_links:nil
+#+OPTIONS: reveal_single_file:nil reveal_slide_number:"c"
+#+OPTIONS: reveal_title_slide:auto reveal_width:-1
+#+REVEAL_MARGIN: -1
+#+REVEAL_MIN_SCALE: -1
+#+REVEAL_MAX_SCALE: -1
+#+REVEAL_ROOT: file:///mnt/hackit/codeds/github-repos/reveal.js/reveal.js
+#+REVEAL_TRANS: linear
+#+REVEAL_SPEED: default
+#+REVEAL_THEME: night
+#+REVEAL_PREAMBLE:nil
+#+REVEAL_POSTAMBLE:nil
+#+REVEAL_HIGHLIGHT_CSS: %r/lib/css/zenburn.css
+
+
+* 
+    :PROPERTIES:
+    :reveal_background: ./images/web-development.jpg
+    :reveal_background_size: 700px
+    :reveal_background_trans: slide
+    :END:
+
+* What is CSS? 
+  #+BEGIN_QUOTE
+  Cascading Style Sheets is a style sheet language developed to control the presentation of markup language documents.
+  #+END_QUOTE
+
+  CSS deals with the presentation while HTML deals with structure of the web.
+  
+* What is CSS? 
+  - A style sheet is a set of rule defining how an html element will be "presented" in the browser.
+    #+BEGIN_QUOTE
+    These rules are targeted to specific element in the html document.
+    #+END_QUOTE
+  
+* 
+  :PROPERTIES: 
+  :reveal_background: ./images/cssvshtml.jpg
+  :reveal_background_size: 700px
+  :reveal_background_trans: slide
+  :END:
+
+  
+* 
+    :PROPERTIES:
+    :reveal_background: ./images/diff.jpg
+    :reveal_background_size: 600px
+    :reveal_background_trans: slide
+    :END:
+
+* CSS 
+  - Style Sheets are a collection of formatting rules
+  - Styles are mostly contained in an external file
+
+* What's cascade? 
+  - Set of rules for resolving conflicts with multiple CSS rules applied to the same elements
+    
+    #+BEGIN_SRC css
+    h1 {
+    color: red; 
+    }
+    h1 {
+    color: blue;
+    }
+    #+END_SRC
+
+
+* How's CSS applied ? 
+  #+ATTR_REVEAL: :frag (grow)
+   - Browser Stylesheets
+   - Linked ( External ) Stylesheets
+   - Embedded ( Internal ) Stylesheets
+   - Inline (Internal ) Stylesheets
+
+* 
+  :PROPERTIES: 
+  :reveal_background: ./images/css.jpg
+  :reveal_background_size: 700px
+  :reveal_background_trans: slide
+  :END:
+
+* Selectors 
+     Element Selectors 
+     #+BEGIN_SRC html 
+     <p> Hello world </p>
+     #+END_SRC
+      #+BEGIN_SRC css 
+      p { color: red; }
+      #+END_SRC
+
+* Selectors     
+     Class selectors 
+      #+BEGIN_SRC html
+      <h1 class="heading"> Hello world </h1>
+      #+END_SRC
+      #+BEGIN_SRC css
+      .heading { color: red; }
+      #+END_SRC
+
+* Selectors     
+  Id selectors 
+      #+BEGIN_SRC html
+      <h1 id="heading"> Hello world </h1>
+      #+END_SRC
+      #+BEGIN_SRC css
+      #heading { color: red; }
+      #+END_SRC
+
+
+* Unique vs non-unique
+    :PROPERTIES:
+    :reveal_background: ./images/idvsclass.jpg
+    :reveal_background_size: 700px
+    :reveal_background_trans: slide
+    :END:
+  
+

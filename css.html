@@ -26,19 +26,19 @@
 nil
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Cascading StyleSheets</h1><p class="date">Created: 2016-12-30 Fri 23:08</p>
+<section id="sec-title-slide"><h1 class="title">Cascading StyleSheets</h1><p class="date">Created: 2017-01-06 Fri 20:02</p>
 </section>
 
 
 <section>
-<section id="slide-org3237f75" data-background="./images/web-development.jpg" data-background-size="700px" data-background-transition="slide">
-<h2 id="org3237f75"></h2>
+<section id="slide-orgbea29c0" data-background="./images/web-development.jpg" data-background-size="700px" data-background-transition="slide">
+<h2 id="orgbea29c0"></h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org33767eb">
-<h2 id="org33767eb">What is CSS?</h2>
+<section id="slide-org386b128">
+<h2 id="org386b128">What is CSS?</h2>
 <blockquote nil>
 <p>
 Cascading Style Sheets is a style sheet language developed to control the presentation of markup language documents.
@@ -52,8 +52,8 @@ CSS deals with the presentation while HTML deals with structure of the web.
 </section>
 </section>
 <section>
-<section id="slide-org47fcb3a">
-<h2 id="org47fcb3a">What is CSS?</h2>
+<section id="slide-orgb96db4e">
+<h2 id="orgb96db4e">What is CSS?</h2>
 <ul>
 <li><p>
 A style sheet is a set of rule defining how an html element will be "presented" in the browser.
@@ -69,21 +69,21 @@ These rules are targeted to specific element in the html document.
 </section>
 </section>
 <section>
-<section id="slide-org299c386" data-background="./images/cssvshtml.jpg" data-background-size="700px" data-background-transition="slide">
-<h2 id="org299c386"></h2>
+<section id="slide-org8441692" data-background="./images/cssvshtml.jpg" data-background-size="700px" data-background-transition="slide">
+<h2 id="org8441692"></h2>
 
 
 </section>
 </section>
 <section>
-<section id="slide-orgc4b5816" data-background="./images/diff.jpg" data-background-size="600px" data-background-transition="slide">
-<h2 id="orgc4b5816"></h2>
+<section id="slide-orgc49e6a1" data-background="./images/diff.jpg" data-background-size="600px" data-background-transition="slide">
+<h2 id="orgc49e6a1"></h2>
 
 </section>
 </section>
 <section>
-<section id="slide-orgecc805a">
-<h2 id="orgecc805a">CSS</h2>
+<section id="slide-org966a96c">
+<h2 id="org966a96c">CSS</h2>
 <ul>
 <li>Style Sheets are a collection of formatting rules</li>
 <li>Styles are mostly contained in an external file</li>
@@ -93,8 +93,8 @@ These rules are targeted to specific element in the html document.
 </section>
 </section>
 <section>
-<section id="slide-org49bdac0">
-<h2 id="org49bdac0">What's cascade?</h2>
+<section id="slide-org6738813">
+<h2 id="org6738813">What's cascade?</h2>
 <ul>
 <li><p>
 Set of rules for resolving conflicts with multiple CSS rules applied to the same elements
@@ -102,11 +102,11 @@ Set of rules for resolving conflicts with multiple CSS rules applied to the same
 
 <div class="org-src-container">
 
-<pre  class="src src-css"><span style="color: #A6E22E;">h1 </span>{
-<span style="color: #FD971F;">color</span>: red; 
+<pre  class="src src-css">h1 {
+color: red; 
 }
-<span style="color: #A6E22E;">h1 </span>{
-<span style="color: #FD971F;">color</span>: blue;
+h1 {
+color: blue;
 }
 </pre>
 </div></li>
@@ -117,8 +117,8 @@ Set of rules for resolving conflicts with multiple CSS rules applied to the same
 </section>
 </section>
 <section>
-<section id="slide-orgce05505">
-<h2 id="orgce05505">How's CSS applied ?</h2>
+<section id="slide-org716ee2a">
+<h2 id="org716ee2a">How's CSS applied ?</h2>
 <ul>
 <li class="fragment grow">Browser Stylesheets</li>
 <li class="fragment grow">Linked ( External ) Stylesheets</li>
@@ -130,63 +130,63 @@ Set of rules for resolving conflicts with multiple CSS rules applied to the same
 </section>
 </section>
 <section>
-<section id="slide-org89a968c" data-background="./images/css.jpg" data-background-size="700px" data-background-transition="slide">
-<h2 id="org89a968c"></h2>
+<section id="slide-org05e7ecb" data-background="./images/css.jpg" data-background-size="700px" data-background-transition="slide">
+<h2 id="org05e7ecb"></h2>
 
 </section>
 </section>
 <section>
-<section id="slide-orgfb19ba0">
-<h2 id="orgfb19ba0">Selectors</h2>
+<section id="slide-orgc2838f0">
+<h2 id="orgc2838f0">Selectors</h2>
 <p>
 Element Selectors 
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-html">&lt;<span style="color: #A6E22E;">p</span>&gt; Hello world &lt;/<span style="color: #A6E22E;">p</span>&gt;
+<pre  class="src src-html">&lt;p&gt; Hello world &lt;/p&gt;
 </pre>
 </div>
 <div class="org-src-container">
 
-<pre  class="src src-css"><span style="color: #A6E22E;">p </span>{ <span style="color: #FD971F;">color</span>: red; }
+<pre  class="src src-css">p { color: red; }
 </pre>
 </div>
 
 </section>
 </section>
 <section>
-<section id="slide-orgf423065">
-<h2 id="orgf423065">Selectors</h2>
+<section id="slide-org8a6bbce">
+<h2 id="org8a6bbce">Selectors</h2>
 <p>
 Class selectors 
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-html">&lt;<span style="color: #A6E22E;">h1</span> <span style="color: #FD971F;">class</span>=<span style="color: #E6DB74;">"heading"</span>&gt;<span style="font-weight: bold; text-decoration: underline;"> Hello world </span>&lt;/<span style="color: #A6E22E;">h1</span>&gt;
+<pre  class="src src-html">&lt;h1 class="heading"&gt; Hello world &lt;/h1&gt;
 </pre>
 </div>
 <div class="org-src-container">
 
-<pre  class="src src-css"><span style="color: #A6E22E;">.heading </span>{ <span style="color: #FD971F;">color</span>: red; }
+<pre  class="src src-css">.heading { color: red; }
 </pre>
 </div>
 
 </section>
 </section>
 <section>
-<section id="slide-orgde4e883">
-<h2 id="orgde4e883">Selectors</h2>
+<section id="slide-org673e3ac">
+<h2 id="org673e3ac">Selectors</h2>
 <p>
 Id selectors 
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-html">&lt;<span style="color: #A6E22E;">h1</span> <span style="color: #FD971F;">id</span>=<span style="color: #E6DB74;">"heading"</span>&gt;<span style="font-weight: bold; text-decoration: underline;"> Hello world </span>&lt;/<span style="color: #A6E22E;">h1</span>&gt;
+<pre  class="src src-html">&lt;h1 id="heading"&gt; Hello world &lt;/h1&gt;
 </pre>
 </div>
 <div class="org-src-container">
 
-<pre  class="src src-css"><span style="color: #A6E22E;">#heading </span>{ <span style="color: #FD971F;">color</span>: red; }
+<pre  class="src src-css">#heading { color: red; }
 </pre>
 </div>
 
@@ -194,8 +194,44 @@ Id selectors
 </section>
 </section>
 <section>
-<section id="slide-org0b88081" data-background="./images/idvsclass.jpg" data-background-size="700px" data-background-transition="slide">
-<h2 id="org0b88081">Unique vs non-unique</h2>
+<section id="slide-org662871d" data-background="./images/idvsclass.jpg" data-background-size="700px" data-background-transition="slide">
+<h2 id="org662871d">Unique vs non-unique</h2>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org2735a60">
+<h2 id="org2735a60">CSS Basics</h2>
+<div class="outline-text-2" id="text-org2735a60">
+</div></section>
+<section id="slide-orgabfbbf0">
+<h3 id="orgabfbbf0">Colors</h3>
+<ul>
+<li><b>rgb(10,30,50)</b></li>
+<li>#445566</li>
+<li>red ,green , blue</li>
+<li><b>rgba(10,30,50,0.5)</b></li>
+
+</ul>
+
+</section>
+<section id="slide-orgfd378de">
+<h3 id="orgfd378de">Fonts</h3>
+<div class="org-src-container">
+
+<pre  class="src src-css">p {
+font-family: Arial, Helvetica, Serif;
+font-size: 15px or 1.6em;
+font-weight: normal | bold | bolder | lighter ; 
+font-style: normal | italic | oblique ;
+}
+</pre>
+</div>
+
+</section>
+<section id="slide-org0314f92">
+<h3 id="org0314f92"></h3>
 </section>
 </section>
 </div>

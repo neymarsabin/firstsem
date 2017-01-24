@@ -1,5 +1,5 @@
 #+TITLE: Cascading StyleSheets
-#+OPTIONS: num:nil toc:nil H:1 html_postamble:nil reveal_single_file:t 
+#+OPTIONS: num:nil toc:nil H:1 html_postamble:nil 
 #+OPTIONS: reveal_center:t reveal_control:t reveal_height:-1
 #+OPTIONS: reveal_history:nil reveal_keyboard:t reveal_overview:t
 #+OPTIONS: reveal_progress:t reveal_rolling_links:nil
@@ -15,6 +15,7 @@
 #+REVEAL_PREAMBLE:nil
 #+REVEAL_POSTAMBLE:nil
 #+REVEAL_HIGHLIGHT_CSS: %r/lib/css/zenburn.css
+#+REVEAL_EXTRA_CSS: ./modified.css
 
 
 * 

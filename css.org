@@ -1,9 +1,9 @@
 #+TITLE: Cascading StyleSheets
-#+OPTIONS: num:nil toc:nil H:1 html_postamble:nil 
+#+OPTIONS: num:nil toc:nil H:2 html_postamble:nil 
 #+OPTIONS: reveal_center:t reveal_control:t reveal_height:-1
 #+OPTIONS: reveal_history:nil reveal_keyboard:t reveal_overview:t
 #+OPTIONS: reveal_progress:t reveal_rolling_links:nil
-#+OPTIONS: reveal_single_file:nil reveal_slide_number:"c"
+#+OPTIONS: reveal_single_file:t reveal_slide_number:"c"
 #+OPTIONS: reveal_title_slide:auto reveal_width:-1
 #+REVEAL_MARGIN: -1
 #+REVEAL_MIN_SCALE: -1
@@ -110,13 +110,123 @@
       #+BEGIN_SRC css
       #heading { color: red; }
       #+END_SRC
-
+	
 
 * Unique vs non-unique
     :PROPERTIES:
     :reveal_background: ./images/idvsclass.jpg
     :reveal_background_size: 700px
     :reveal_background_trans: slide
-    :END:
-  
+    :END:      
 
+* Background 
+	_HTML_
+  #+BEGIN_SRC html 
+	<div class="background_demo"> 
+	
+	</div>
+	#+END_SRC
+	_CSS_
+	#+BEGIN_SRC css 
+	.background_demo { 
+	
+	background-color: red;
+	background-image: url("path_of_image");
+	background-repeat: repeat-x || repeat-y || no-repeat ;
+	background-position: right top;
+	background-attachment: fixed;
+	}
+	#+END_SRC
+
+* Box Model
+  :PROPERTIES: 
+  :reveal_background: ./images/boxmodel.png
+  :reveal_background_trans: slide
+	:reveal_background_size: 700px
+  :END:      
+
+* Margin
+	_HTML_
+	#+BEGIN_SRC html 
+	<div class="one">This is a paragraph. </div>
+	#+END_SRC
+	_CSS_
+	#+BEGIN_SRC css 
+	.one { margin: 25px 50px 75px 100px; }
+	// OR 
+	.one {  margin: 25px 50px 75px; }
+	//OR
+	.one { margin: 25px 50px; }
+	//OR
+	.one { margin: 25px;}
+	#+END_SRC
+
+
+* Border
+	_HTML_
+	#+BEGIN_SRC html 
+	<div class="border_demo"> <p>This is a paragraph </p></div>
+	#+END_SRC
+	_CSS_
+	#+BEGIN_SRC css 
+	.border_demo p {
+	     border-style: dotted || dashed || solid || double || none ;
+			 border-width: 10px;
+			 border-color: red;
+			 border-top-style: dotted;
+			 border-radius: 15px;
+	}
+	#+END_SRC
+
+* Padding 
+	_HTML_
+	#+BEGIN_SRC html 
+	<p class="padding_demo"> This is a padding demo </p>
+	#+END_SRC
+	_CSS_
+	#+BEGIN_SRC css 
+	.padding_demo {
+	padding: 10px 20px 30px 40px;
+	padding: 10px 20px 40px;
+	padding: 10px 30px;
+	padding: 30px;
+	}
+	#+END_SRC
+
+* Height and Width 
+	
+	#+BEGIN_QUOTE
+	Please see for yourself.......too easy
+	#+END_QUOTE
+
+* Display Property
+	#+BEGIN_QUOTE
+	How u display elements in a web page?
+	#+END_QUOTE
+** BLOCK LEVEL ELEMENTS
+	 #+BEGIN_QUOTE
+	 starts on new line \\
+	 takes up full width available 
+ 	 #+END_QUOTE
+	 #+BEGIN_EXAMPLE
+	 <div> , <form> , <header> , <footer> , <section> , <p>
+	 #+END_EXAMPLE
+
+
+** INLINE LEVEL ELEMENTS 
+	 #+BEGIN_QUOTE
+	 takes as much as width nescessary
+	 #+END_QUOTE
+	 #+BEGIN_EXAMPLE
+	 <span> , <a> 
+	 #+END_EXAMPLE
+
+** Example
+	 #+BEGIN_SRC css 
+	 display: block;
+	 display: inline; 
+	 display: none; 
+	 #+END_SRC
+
+
+	

@@ -218,15 +218,66 @@
 	 takes as much as width nescessary
 	 #+END_QUOTE
 	 #+BEGIN_EXAMPLE
-	 <span> , <a> 
+	 <span> , <a> , <img>
 	 #+END_EXAMPLE
 
 ** Example
 	 #+BEGIN_SRC css 
-	 display: block;
-	 display: inline; 
-	 display: none; 
+	 p { 
+	  display: block;
+		display: inline; 
+		display: none; 
+		display: inline-block; 
+	 }
+	 #+END_SRC
+
+* Position Property 
+	#+BEGIN_QUOTE
+	For position elements in the web page.
+	#+END_QUOTE
+	
+	#+BEGIN_SRC css 
+
+  postion: fixed;
+  postion: relative;
+  position: static;
+  postion: absolute;
+
+	#+END_SRC
+	Postion property uses the following proporties: 
+	#+BEGIN_SRC css 
+  	top: 200px;
+  	bottom: 400px;
+  	right: 500px;
+  	left: 20px;
+	#+END_SRC
+
+** postion: fixed
+	 
+	 #+BEGIN_QUOTE
+	 Fixes the element anywhere it's specified.
+	 #+END_QUOTE
+	 #+BEGIN_SRC css 
+	 #box1 {
+	    position: fixed;
+			top: 45px;
+	 }
 	 #+END_SRC
 
 
-	
+** position: static 
+	 #+BEGIN_QUOTE
+	 Default property of the elements 
+	 #+END_QUOTE
+
+	 - Can't apply properties like top,bottom,right,left.
+** position: relative
+	 #+BEGIN_QUOTE
+	 Element will be positioned relative to it's normal position.
+	 #+END_QUOTE
+
+** position: absolute	 
+	 - Elements will be removed from its normal flow
+	 - And positioned according to it's parent elements
+	 - If not parent element, then position according to body of the element
+

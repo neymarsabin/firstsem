@@ -227,7 +227,6 @@
 	  display: block;
 		display: inline; 
 		display: none; 
-		display: inline-block; 
 	 }
 	 #+END_SRC
 
@@ -244,7 +243,7 @@
   postion: absolute;
 
 	#+END_SRC
-	Postion property uses the following proporties: 
+	Postion property uses the following values:
 	#+BEGIN_SRC css 
   	top: 200px;
   	bottom: 400px;
